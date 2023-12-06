@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:social_media_application/presentation/ui/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -97,7 +99,9 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 12,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => const HomeScreen());
+              },
               child: const Text(
                 'Log In',
                 style: TextStyle(
