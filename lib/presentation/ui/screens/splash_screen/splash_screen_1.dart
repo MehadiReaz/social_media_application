@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../auth/login_screen.dart';
+import 'splash_screen_2.dart';
 
 class SplashScreen1 extends StatefulWidget {
   const SplashScreen1({super.key});
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen1> {
 
   void goToNextScreen() async {
     await Future.delayed(const Duration(seconds: 2)).then((value) {
-      Get.to(const LoginScreen());
+      Get.to(const SplashScreen2());
     });
   }
 
